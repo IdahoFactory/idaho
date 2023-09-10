@@ -1,0 +1,68 @@
+.idaho{
+    padding: 5% 23%;
+}
+
+.idahoHolder{
+    min-height: 2,5vh;
+    padding: 2.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 15px 0px rgba(0,0,0,0.05);
+    -webkit-box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 2px 2px 15px 0px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    background-color: white;
+    z-index: 10;
+    position: relative;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading *{
+    margin: 0;
+}
+
+.heading h1{
+    font-size: 3rem;
+}
+
+.heading h4{
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.screenshots::-webkit-scrollbar{
+    width: 0 !important;
+    display: none;
+}
+
+.idahoInfo{
+    width: 20%;
+}
+
+.idahoName{
+    margin: 0;
+}
+
+.download .iconify{
+    font-size: 1.2rem;
+}
+
+@media (max-width: 880px){
+    .txt{
+        padding: 5%;
+    }
+}
+
+@media (max-width: 650px){
+    .download{
+        width: 100%;
+    }
+}

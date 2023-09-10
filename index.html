@@ -1,0 +1,151 @@
+<!DOCTYPE html><html lang="pl"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idaho Factory</title>
+    <script src="js/iconify.min.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/sweetalert.min.js"></script>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/lightbox.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/s1.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <div id="preloader">
+        <div class="loadingLogo" id="loadingLogo"></div>
+    </div>
+    <div class="wrapper">
+        <header class="navbar" id="navbar">
+            <div class="logo" id="logo">
+                Idaho<span style="color: rgb(206, 4, 4); font-size: 26px;">Factory</span>
+                <span class="logo_text">Powrót na góre strony</span>
+            </div>
+            <div class="navBtns" id="navBtns">
+                <ul class="links">
+                    <li class="link" id="l1">Strona Główna</li>
+                    <li class="link" id="l2">Discord</li>
+                    <li class="link" id="l3">Nasza Oferta</li>
+                </ul>
+                <button class="contact" id="contact">Zakup</button>
+            </div>
+            <div class="menu" id="menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="mainInfo">
+                <h1 class="mainHeading">Witaj na oficjalnej stronie <span style="color: rgb(192, 3, 3);">Idaho111</span></h1>
+                <p class="mainParagraph" <span style="color:rgb(0, 0, 0)">Nie ufasz nam? <span style="color: rgb(192, 3, 3);">Mamy ponad 30 legit checków!</span>
+                    </p><p class="mainParagraph" <span style="color:rgb(0, 0, 0)">Sprawdź naszą ofertę klikając przycisk <span style="color: rgb(192, 3, 3);">na dole</span>
+                </p><div class="mainBtns">
+                    <button class="myWork" id="myWorkBtn">Oferta</button>
+                    <input type="text" id="myInput" style="display: none;" value="idaho111">
+                    <div class="socialMedia" id="socialMedia">
+                        <a href="https://discord.gg/rpqNg6jaJ8" target="_blank_"><div class="socialIcon" id="sIcon1"><span class="iconify" data-icon="bi:discord"></span></div></a>
+                        <div class="socialIcon" id="sIcon2 dc"><span class="iconify" data-icon="mdi:contact-outline" onclick="myFunction()"></span></div>
+                        <a href="https://github.com/IdahoFactory" target="_blank_"><div class="socialIcon" id="sIcon1"><span class="iconify" data-icon="codicon:github"></span></div></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="shape"></div>
+                <div class="shape2"></div>
+                <div class="mainImage3"></div>
+                <div class="left"></div>
+                <div class="mainImage"></div>
+        </main>
+        <section class="idaho">
+            <div class="idahoHolder">
+                <div class="heading">
+                    <h4 id="myWork">Idaho Shop</h4>
+                    <h1 id="txt">Nasza Oferta</h1>
+                </div>
+                <div class="jestespedalem">
+                    <div class="trochecringestary"></div>
+                    <div class="tacalakartajeslitoczytaszjestesgejem">
+                        <div class="oferta" id="oferta">
+                        </div>
+                    </div>                
+                </div>
+                <div class="idahoInfo">
+                    <center class="idahoName">Discord Nitro 1msc / rok</center>
+                    <center class="idahoDesc">1 miesiąc: 20PLN, rok: 80PLN</center>
+                    <center class="idahoDesc">──────────────────</center>
+                    <center class="idahoName">Nitro Boosty na serwer (3 miesiące)</center>
+                    <center class="idahoDesc">7x boostów: 10PLN, 14x boostów: 20PLN</center>
+                    <center class="idahoDesc">──────────────────</center>
+                    <center class="idahoName">Tokeny z nitrem na (3 miesiące)</center>
+                    <center class="idahoDesc">1x token: 5PLN</center>
+                </div>
+            </div>
+        </section>
+        <section class="contactSection" id="contactSection">
+            <form id="form" onsubmit="event.preventDefault(), formValidation();">
+                <h1>Dziękujemy za zaufanie!</h1> 
+                <div class="form">
+                    <div class="inputArea">
+                        <label for="nameInput">Discord id: <span class="iconify" data-icon="fa-solid:star-of-life"></span></label>
+                        <input type="text" id="nameInput" placeholder="Twoje discord id">
+                        <span class="error" id="nameError"></span>
+                        <label for="emailInput">E-mail: <span class="iconify" data-icon="fa-solid:star-of-life"></span></label>
+                        <input type="text" id="emailInput" placeholder="Twój email">
+                        <span class="error" id="emailError"></span>
+                        <label for="subjectInput">Usługa: <span class="iconify" data-icon="fa-solid:star-of-life"></span></label>
+                        <div class="subjectSelect">
+                            <input type="text" id="subjectInput" readonly placeholder="Wybierz usługę" value>
+                            <span class="iconify dropdownIcon" id="dropdownIcon" data-icon="akar-icons:chevron-down"></span>
+                            <ul class="subjectChoose" id="dropdown">
+                                <li class="subject" id="nitro"><span class="iconify" data-icon="ic:baseline-discord"> </span>Discord Nitro na miesiąc</li>
+                                <li class="subject" id="nitrorok"><span class="iconify" data-icon="ic:baseline-discord"></span>Discord Nitro na rok</li>
+                                <li class="subject" id="siedemboostow"><span class="iconify" data-icon="material-symbols:diamond-outline"></span>7x boostów 3 miesiące</li>
+                                <li class="subject" id="czternascieboostow"><span class="iconify" data-icon="material-symbols:diamond-outline"></span>14x boostów 3 miesiące</li>
+                                <li class="subject" id="token"><span class="iconify" data-icon="material-symbols:key-rounded"></span>token z nitrem na 3 miesiące</li>
+                            </ul>
+                        </div>
+                        <span class="error" id="subjectError"></span>
+                    </div>
+                    <div class="messageArea">
+                        <label for="message">Płatność: <span class="iconify" data-icon="fa-solid:star-of-life"></span></label>
+                        <textarea name id="message" cols="30" rows="10" placeholder="Jeżeli płacisz PayPalem, wyślij pieniądze na mail: znlbiznes@gmail.com oraz wpisz tutaj swoim zdaniem jakiej metody płatności użyłeś oraz Imie i Nazwisko które masz na PayPalu. Natomiast jeżeli płacisz PaySafeCardem, wpisz tutaj jego kod i czekaj na wiadomość na discordzie. W celu płatności za pomocą blika, skontatkuj się z idaho111. Jeśli chcesz, dopisz tutaj dodatkową wiadomość." maxlength="2000"></textarea>
+                        <span class="error" id="msgError"></span>
+                    </div>
+                </div>
+                <div class="formButtons">
+                    <input type="reset" value="Wyczyść" id="reset">
+                              <button type="submit">Płatność</button>
+                </div>
+            </form>
+        </section>
+        <footer>
+           <h3>© 2023 Idaho Factory</h3>
+        </footer>
+    </div>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollToPlugin.min.js"></script>
+    <script>
+        const download = document.getElementById("downloadIdahoPL");
+        let keyPressed = function(e){
+            if(!e) e = window.event;
+            switch (e.keyCode)
+            {
+                case 80:
+                    download.click();
+            }
+        }
+        window.addEventListener("keyup", keyPressed, true);
+        window.addEventListener("keydown", keyPressed, true);
+    </script>
+    <script src="js/discord.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/form.js"></script>
+
+</body></html>
